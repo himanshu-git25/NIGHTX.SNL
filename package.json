@@ -1,0 +1,23 @@
+{
+  "name": "nightx-ide",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.nightx.ide",
+    "productName": "NightX IDE",
+    "files": ["**/*"],
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "dependencies": {
+    "electron": "^27.0.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.5.0"
+  }
+}
